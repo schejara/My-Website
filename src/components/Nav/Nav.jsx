@@ -23,8 +23,8 @@ function Nav() {
             <Link className="navLink" to="/ResumePage">
               Resume Page
             </Link>
-            <Link className="navLink" to="/LandingPage">
-              LandingPage
+            <Link className="navLink" to="/GraduationDetails">
+            GraduationDetails
             </Link>
 
             

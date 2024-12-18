@@ -1,0 +1,64 @@
+/* Main container for the graduation details */
+.graduation-container {
+  width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content and photo wrapper, using Flexbox */
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centers content vertically */
+  gap: 30px; /* Adds space between content and image */
+  max-width: 1200px; /* Set a max-width to avoid stretching on very large screens */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling the content section */
+.content {
+  flex: 1;
+  text-align: left;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #11117d;
+  margin-bottom: 10px;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  color: #5937b6;
+  margin: 5px 0;
+}
+
+.content ul {
+  list-style-type: none;
+  margin-left: 20px;
+  width: 600px;
+
+}
+
+.content li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Styling the image section */
+.photo img {
+  width: 350px; /* Control image size */
+  height: 330px;
+  border-radius: 8px; /* Adds rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the image */
+  margin-left: 30px;
+  margin-top: 380px;
+}
+

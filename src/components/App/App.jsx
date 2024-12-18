@@ -10,7 +10,7 @@ import Footer from '../Footer/Footer';
 import Home from './Home/Home';
 import AboutPage from '../AboutPage/AboutPage';
 import ResumePage from '../ResumePage/Resume';
-import LandingPage from '../Graduation/LandingPage';
+import GraduationDetails from '../GraduationDetails/GraduationDetails';
 import './App.css';
 
 function App() {
@@ -34,9 +34,9 @@ function App() {
           <Route
             
             exact
-            path="/LandingPage"
+            path="/GraduationDetails"
           >
-            <LandingPage />
+            <GraduationDetails />
           </Route>
 
           

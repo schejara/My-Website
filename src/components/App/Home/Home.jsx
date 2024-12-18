@@ -3,8 +3,8 @@ import './Home.css';
 function Home () {
 return(
     <div>
-    
-     <img src='../documentation/images/ShobhaPP1.jpg'/>
+    <h1 className="name">Shobha Chejara</h1>
+     <img src='../documentation/images/Img_3.jpg'/>
     </div>
 )
 
