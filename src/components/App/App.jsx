@@ -9,8 +9,8 @@ import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Home from './Home/Home';
 import AboutPage from '../AboutPage/AboutPage';
-import InfoPage from '../InfoPage/InfoPage';
-import LandingPage from '../LandingPage/LandingPage';
+import ResumePage from '../ResumePage/Resume';
+import LandingPage from '../Graduation/LandingPage';
 import './App.css';
 
 function App() {
@@ -44,9 +44,9 @@ function App() {
           <Route
            
             exact
-            path="/info"
+            path="/ResumePage"
           >
-            <InfoPage />
+            <ResumePage />
           </Route>   
 
           
