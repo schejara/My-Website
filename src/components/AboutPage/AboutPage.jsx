@@ -4,7 +4,7 @@ import './AboutPage.css'; // Make sure to create and import the CSS file
 function AboutPage() {
   return (
     <div className="container">
-      <h1 className='family'>Family, Fun, and Hobbies</h1>
+      <h1 className='family'>Personal Insights</h1>
       <div className="section">
         <div className="text">
           <p className='about'>
