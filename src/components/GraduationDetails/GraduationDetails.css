@@ -1,5 +1,4 @@
-/* Main container for the graduation details */
-.graduation-container {
+.graduation-container {  
   width: 90%;
     max-width: 1100px;
     margin: 0 auto;
@@ -9,56 +8,77 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Content and photo wrapper, using Flexbox */
+
 .content-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Centers content vertically */
-  gap: 30px; /* Adds space between content and image */
-  max-width: 1200px; /* Set a max-width to avoid stretching on very large screens */
   width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Styling the content section */
-.content {
-  flex: 1;
-  text-align: left;
+.content section {
+  margin-bottom: 40px;
 }
 
-.content h2 {
-  font-size: 2rem;
-  color: #11117d;
-  margin-bottom: 10px;
+.education-section {
+  margin-bottom: 30px;
 }
 
-.content h3 {
-  font-size: 1.5rem;
-  color: #5937b6;
-  margin: 5px 0;
+.education-section h2 {
+  margin-bottom: 20px;
 }
 
-.content ul {
-  list-style-type: none;
-  margin-left: 20px;
-  width: 600px;
-
+.education-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.content li {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: rgba(23, 23, 153, 0.585);
+.education-section .education-text {
+  flex: 0 0 60%;  /* Adjust text width to 60% */
+  margin-right: 20px;
 }
 
-/* Styling the image section */
-.photo img {
-  width: 350px; /* Control image size */
-  height: 330px;
-  border-radius: 8px; /* Adds rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the image */
-  margin-left: 30px;
-  margin-top: 380px;
+.education-section .certification-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
+.education-section .certification-logos .istqb-logo,
+.education-section .certification-logos .prime-logo {
+  width: 350px; /* Set both logos to the same size */
+  height: auto;
+}
+
+.prime-section h2 {
+  margin-bottom: 20px;
+}
+
+.prime-section .prime-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prime-section .prime-content .prime-text {
+  flex: 0 0 55%; /* Adjust text width to 55% */
+  margin-right: 20px;
+}
+
+.prime-section .prime-content .prime-photo {
+  flex-shrink: 0;
+}
+
+.prime-section .prime-content .prime-photo img {
+  width: 350px; /* Set photo size */
+  height: auto;
+  border-radius: 8px;
+}
+h2{
+  color: rgb(70, 70, 175);
+}
+.education{
+  font-family: 'Times New Roman', Times, serif;
+}

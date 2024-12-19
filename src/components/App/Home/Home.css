@@ -1,11 +1,87 @@
-img{
+/* Overall layout */
+.home-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+  
+  /* Flex container for image and content */
+  .profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;  /* Adds space between the image and the text */
+  }
+  
+  /* Profile image styling */
+  .profile-img {
     height: 400px;
     width: 400px;
-   margin-top: 50px;
-   margin-left: 400px;
+    border-radius: 50%; /* Circle border */
+  }
   
-}
-.name{
-    margin-left: 430px;
-    margin-top: 40px;
-}
+  /* About Me content */
+  .about-me {
+    text-align: left;
+    max-width: 600px; /* Limit content width */
+  }
+  
+  /* Name styling */
+  .name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #25187c;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Paragraph styling */
+  .intro, .passion, .overview, .goals {
+    font-size: 18px;
+    color:#594bb7;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .intro strong, .passion strong, .overview strong, .goals strong {
+    font-weight: bold;
+    color: #007BFF; /* Accent color for key points */
+  }
+  
+  .cta {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #555;
+    font-style: italic;
+  }
+  
+  /* Responsive layout for smaller screens */
+  @media (max-width: 768px) {
+    .profile-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-img {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 20px;  /* Adds spacing below the image */
+    }
+  
+    .name {
+      font-size: 28px;
+    }
+  
+    .intro, .passion, .overview, .goals {
+      font-size: 16px;
+    }
+  
+    .cta p {
+      font-size: 16px;
+    }
+  }
+  

@@ -10,7 +10,7 @@ function Nav() {
   return (
     <div className="nav">
       <Link to="/home">
-        <h2 className="nav-title">My-Website</h2>
+        <h2 className="nav-title" > Shobha's Professional Hub</h2>
       </Link>
       <div>
        
@@ -19,16 +19,17 @@ function Nav() {
             <Link className="navLink" to="/Home">
               Home
             </Link>
+            <Link className="navLink" to="/Projects">
+            Projects
+            </Link>
 
             <Link className="navLink" to="/ResumePage">
-              Resume Page
+              Resume 
             </Link>
             <Link className="navLink" to="/GraduationDetails">
-            GraduationDetails
+               Education
             </Link>
-            <Link className="navLink" to="/Project">
-            Project
-            </Link>
+            
 
             
           </>

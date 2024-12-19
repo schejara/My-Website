@@ -4,11 +4,9 @@ import './Resume.css'
 function ResumePage() {
   return (
     <div className="container">
-     <h1>Shobha Chejara | Full Stack Developer</h1>
-     <a href="shobhachejara@gmail.com">Email</a>
-     <a href="">LinkedIn</a>
-     <a href="">Github</a>
-     Mob No - 6122465761     
+     <h1 className='resume'>Shobha Chejara | Full Stack Developer</h1>
+     <p> <a href="https://www.linkedin.com/in/shobha-chejara-1422b6157/">LinkedIn</a> | <a href="https://github.com/schejara">GitHub </a> | Email : shobhachejara@gmail.com | Mobile No : +1 612-246-5761</p>
+     <h5>Address : Lakeville,MN (55044)</h5>  
 
 <p>Detail-oriented and motivated Full Stack Developer with hands-on training in modern web development technologies. Excited to create impactful applications and contribute to innovative projects in a collaborative environment. </p>
 
@@ -53,7 +51,7 @@ function ResumePage() {
 
 <h3>Education & Certification:</h3>
 <ul>
-  <li>Full Stack Software Engineering Certification - Prime Digital Academy - December 2024</li>
+  <li>Full Stack Software Engineering Certification - Prime Digital Academy, Minneapoils - December 2024</li>
   <li>ISTQB - Certified Foundation Level Agile Tester - July 2022</li>
   <li>Master of Commerce - University of Bikaner, India - July 2009</li>
 </ul>

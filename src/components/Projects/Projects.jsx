@@ -1,10 +1,10 @@
 import React from "react";
-import './Project.css';
-function Project(){
+import './Projects.css';
+function Projects(){
     return(
         <div className="Project-Container">
-        <h2>Software Development Projects:</h2>
-         <h3>ZipZap Shop</h3>
+        <h1 className="project">Software Development Projects:</h1>
+         <h2>ZipZap Shop</h2>
           <h3>Full Stack Developer</h3>
           <ul>
           <li>Developed a full-stack e-commerce application designed to provide users with a seamless online shopping experience.</li>
@@ -15,7 +15,7 @@ function Project(){
           </ul>          
       
        
-         <h3>BCX FitJourney</h3>
+         <h2>BCX FitJourney</h2>
 <h3>Full Stack Developer</h3>
 <ul>
 <li>Developed a mobile application for the BCX Challenge, a 100+ day personal growth and habit-building program designed to improve users' wellness through daily challenges.</li>
@@ -32,4 +32,4 @@ function Project(){
     )
 }
 
-export default Project;
+export default Projects;

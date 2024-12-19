@@ -1,32 +1,62 @@
+/* Container styling */
 .container {
-    display: flex;
-    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
     padding: 20px;
   }
   
+  .family {
+    text-align: center;
+    font-size: 34pt;
+    margin-bottom: 40px;
+    margin-left: -500px;
+    font-family: 'Times New Roman', Times, serif; /* Set the font family */
+    
+  }
+  
+  /* Section styling: flexbox for side-by-side layout */
   .section {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
   }
   
-  .section p {
+  /* Styling for the text part */
+  .text {
     flex: 1;
-    font-size: 16px;
+    padding-right: 20px;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-right: 10px;
-    margin-left: 50px;
-    color: rgba(19, 19, 137, 0.585);
-   
+    max-width: 500px; /* Control text width */
+    height: auto; /* Auto-adjust height based on content */
+    
   }
   
+  /* Image styling */
   .image {
-    width: 300px;
+    width: 300px; /* Set photo size */
     height: auto;
     border-radius: 8px;
-    object-fit: cover;
-    margin-top: 20px;
+    margin-left: 200px;
+  }
+  
+  /* Add some spacing and adjust layout for small screens */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text {
+      padding-right: 0;
+      max-width: none;
+    }
+  }
 
+  .about {
+    font-family: 'Times New Roman', Times, serif;     
+    font-size: 1.3rem;
+    line-height: 1.6;
   }
   
   

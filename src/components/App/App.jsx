@@ -11,7 +11,7 @@ import Home from './Home/Home';
 import AboutPage from '../AboutPage/AboutPage';
 import ResumePage from '../ResumePage/Resume';
 import GraduationDetails from '../GraduationDetails/GraduationDetails';
-import Project from '../Projects/Project';
+import Projects from '../Projects/Projects';
 import './App.css';
 
 function App() {
@@ -42,9 +42,9 @@ function App() {
           <Route
             
             exact
-            path="/Project"
+            path="/Projects"
           >
-            <Project />
+            <Projects />
           </Route>
 
           
