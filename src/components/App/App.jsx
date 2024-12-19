@@ -11,6 +11,7 @@ import Home from './Home/Home';
 import AboutPage from '../AboutPage/AboutPage';
 import ResumePage from '../ResumePage/Resume';
 import GraduationDetails from '../GraduationDetails/GraduationDetails';
+import Project from '../Projects/Project';
 import './App.css';
 
 function App() {
@@ -37,6 +38,13 @@ function App() {
             path="/GraduationDetails"
           >
             <GraduationDetails />
+          </Route>
+          <Route
+            
+            exact
+            path="/Project"
+          >
+            <Project />
           </Route>
 
           

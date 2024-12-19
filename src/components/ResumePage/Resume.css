@@ -42,7 +42,7 @@
   h3 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #2980b9;
+    color:  #0c0d64;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
   }
@@ -50,9 +50,10 @@
   /* Paragraph Styling */
   p {
     font-size: 1rem;
-    color: #34495e;
+    color: rgb(23, 23, 153);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+   
   }
   
   /* List Styling */
@@ -64,7 +65,7 @@
   ul li {
     margin: 0.5rem 0;
     font-size: 1rem;
-    color: #7f8c8d;
+    color: rgba(23, 23, 153, 0.585);
   }
   
   ul li span {
@@ -74,7 +75,7 @@
   
   /* Link Styling */
   a {
-    color: #2980b9;
+    color:  #0c0d64;
     text-decoration: none;
   }
   
@@ -125,7 +126,7 @@
   
   /* Button Style */
   button {
-    background-color: #2980b9;
+    background-color:  #0c0d64;
     color: white;
     padding: 10px 20px;
     font-size: 1rem;
@@ -137,5 +138,6 @@
   button:hover {
     background-color: #3498db;
   }
+  
   
   

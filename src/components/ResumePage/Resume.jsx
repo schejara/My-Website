@@ -5,7 +5,10 @@ function ResumePage() {
   return (
     <div className="container">
      <h1>Shobha Chejara | Full Stack Developer</h1>
-<h2>shobhachejara@gmail.com | 612-246-5761 | Github | LinkedIn</h2>
+     <a href="shobhachejara@gmail.com">Email</a>
+     <a href="">LinkedIn</a>
+     <a href="">Github</a>
+     Mob No - 6122465761     
 
 <p>Detail-oriented and motivated Full Stack Developer with hands-on training in modern web development technologies. Excited to create impactful applications and contribute to innovative projects in a collaborative environment. </p>
 

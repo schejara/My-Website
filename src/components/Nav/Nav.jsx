@@ -26,6 +26,9 @@ function Nav() {
             <Link className="navLink" to="/GraduationDetails">
             GraduationDetails
             </Link>
+            <Link className="navLink" to="/Project">
+            Project
+            </Link>
 
             
           </>
