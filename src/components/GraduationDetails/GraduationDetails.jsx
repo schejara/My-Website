@@ -7,8 +7,8 @@ function GraduationDetails() {
       <div className="content-wrapper">
         <div className="content">
 
-        <section className="prime-section">
-            <h1 className='education'>Prime Digital Academy</h1>
+          <section className="prime-section">
+            <h1 className="education">Prime Digital Academy</h1>
             <h2>Full Stack Development Student</h2>
             <h3>July 2024 - December 2024</h3>
             <div className="prime-content">
@@ -30,6 +30,7 @@ function GraduationDetails() {
               </div>
             </div>
           </section>
+
           <section className="education-section">
             <h2>Education & Certification:</h2>
             <div className="education-content">
@@ -37,7 +38,7 @@ function GraduationDetails() {
                 <ul>
                   <li>Full Stack Software Engineering Certification - Prime Digital Academy - December 2024</li>
                   <li>ISTQB - Certified Foundation Level Agile Tester - July 2022</li>
-                  <li>Master of Commerce - University of Bikaner, India - July 2009</li>             
+                  <li>Master of Commerce - University of Bikaner, India - July 2009</li>
                 </ul>
               </div>
               <div className="certification-logos">
@@ -47,7 +48,6 @@ function GraduationDetails() {
                     alt="ISTQB Certification Logo" 
                   />
                 </div>
-                
               </div>
             </div>
           </section>
