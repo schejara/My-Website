@@ -15,7 +15,8 @@ function AboutPage() {
             and we continue to grow and navigate life as a team.
           </p>
         </div>
-        <img src='../public/Couple.jpg' alt="Couple" className="image" />
+        <img src='/Couple.jpg' alt="Couple" className="image" />
+
       </div>
       <div className="section">
         <div className="text">
@@ -27,7 +28,7 @@ function AboutPage() {
             my greatest source of happiness and inspiration, and I cherish every moment with them.
           </p>
         </div>
-        <img src='../public/Kids.jpg' alt="Kids" className="image" />
+        <img src='/Kids.jpg' alt="Kids" className="image" />
       </div>
       <div className="section">
         <div className="text">
@@ -38,7 +39,7 @@ function AboutPage() {
             sports, or watching a good movie with my family, I value these moments of relaxation and connection.
           </p>
         </div>
-        <img src='../public/PickleBall.jpg' alt="Pickleball" className="image" />
+        <img src='/PickleBall.jpg' alt="Pickleball" className="image" />
       </div>
     </div>
   );
