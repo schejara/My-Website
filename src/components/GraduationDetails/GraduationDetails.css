@@ -1,84 +1,156 @@
-.graduation-container {  
+/* Main container for the graduation details */
+.graduation-container {
   width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.content-wrapper {
-  width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-}
-
-.content section {
-  margin-bottom: 40px;
-}
-
-.education-section {
-  margin-bottom: 30px;
-}
-
-.education-section h2 {
-  margin-bottom: 20px;
-}
-
-.education-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.education-section .education-text {
-  flex: 0 0 60%;  /* Adjust text width to 60% */
-  margin-right: 20px;
-}
-
-.education-section .certification-logos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.education-section .certification-logos .istqb-logo,
-.education-section .certification-logos .prime-logo {
-  width: 350px; /* Set both logos to the same size */
-  height: auto;
-}
-
-.prime-section h2 {
-  margin-bottom: 20px;
-}
-
-.prime-section .prime-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.prime-section .prime-content .prime-text {
-  flex: 0 0 55%; /* Adjust text width to 55% */
-  margin-right: 20px;
-}
-
-.prime-section .prime-content .prime-photo {
-  flex-shrink: 0;
-}
-
-.prime-section .prime-content .prime-photo img {
-  width: 350px; /* Set photo size */
-  height: auto;
+  padding: 2rem;
+  background-color: #fff;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-h2{
-  color: rgb(70, 70, 175);
+
+/* Content and photo wrapper, using Flexbox */
+.content-wrapper {
+  display: flex;
+  flex-direction: row; /* Default to row for desktop */
+  align-items: center; /* Centers content vertically */
+  gap: 30px; /* Adds space between content and image */
+  max-width: 1200px; /* Set a max-width to avoid stretching on very large screens */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
-.education{
-  font-family: 'Times New Roman', Times, serif;
+
+/* Styling the content section */
+.content {
+  flex: 1;
+  text-align: left;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #11117d;
+  margin-bottom: 10px;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  color: #5937b6;
+  margin: 5px 0;
+}
+
+.content ul {
+  list-style-type: none;
+  margin-left: 20px;
+  width: 600px;
+}
+
+.content li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: rgba(23, 23, 153, 0.585);
+}
+
+/* Styling the image section */
+.photo, .istqb-logo img {
+  width: 350px; /* Control image size */
+  height: 330px;
+  border-radius: 8px; /* Adds rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the image */
+}
+
+/* Optional: Add margin to the photo at the bottom to create space */
+.photo {
+  margin-top: 20px;
+}
+
+/* Media Queries for Mobile and Tablet Screens */
+
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack content and image vertically on mobile */
+    align-items: center; /* Center the items horizontally */
+    gap: 20px; /* Reduce space between items */
+  }
+
+  .content {
+    text-align: center; /* Center-align text for mobile */
+    width: 100%; /* Ensure the content takes full width */
+  }
+
+  .content ul {
+    width: 100%; /* Make the list items take full width on small screens */
+    margin-left: 0; /* Remove the left margin */
+  }
+
+  .photo {
+    width: 280px; /* Adjust image size for mobile */
+    height: 260px;
+    margin-top: 0; /* Remove the top margin for the photo */
+  }
+
+  .istqb-logo img {
+    width: 200px; /* Adjust size of certification logo for mobile */
+    height: 200px;
+  }
+}
+
+/* Tablet screens (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack content and image vertically on tablets */
+    align-items: center; /* Center the items horizontally */
+    gap: 20px; /* Reduce space between items */
+  }
+
+  .content {
+    text-align: center; /* Center-align text for tablet */
+    width: 90%; /* Reduce width on tablet for better spacing */
+  }
+
+  .content ul {
+    width: 80%; /* Adjust list width for tablet */
+    margin-left: 0; /* Remove the left margin */
+  }
+
+  .photo {
+    width: 300px; /* Adjust image size for tablet */
+    height: 280px;
+    margin-top: 0; /* Remove the top margin for the photo */
+  }
+
+  .istqb-logo img {
+    width: 250px; /* Adjust certification logo size for tablet */
+    height: 250px;
+  }
+}
+
+/* Desktop screens (1025px and up) */
+@media (min-width: 1025px) {
+  .content-wrapper {
+    flex-direction: row; /* Keep content and image side-by-side for larger screens */
+    align-items: center; /* Centers content vertically */
+    gap: 30px; /* Adds space between content and image */
+  }
+
+  .content {
+    text-align: left; /* Align text to the left */
+  }
+
+  .content ul {
+    width: 600px; /* Set the width for larger screens */
+    margin-left: 20px;
+  }
+
+  .photo {
+    width: 350px; /* Default image size for desktop */
+    height: 330px;
+    margin-top: 0;
+  }
+
+  .istqb-logo img {
+    width: 350px; /* Default size for certification logo */
+    height: 330px;
+  }
 }

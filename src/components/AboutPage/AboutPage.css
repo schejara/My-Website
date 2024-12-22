@@ -3,60 +3,137 @@
     width: 90%;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  .family {
+}
+
+/* Header styling */
+.family {
     text-align: center;
     font-size: 34pt;
     margin-bottom: 40px;
-    margin-left: -700px;
     font-family: 'Times New Roman', Times, serif; /* Set the font family */
-    
-  }
-  
-  /* Section styling: flexbox for side-by-side layout */
-  .section {
+}
+
+/* Section styling: flexbox for side-by-side layout */
+.section {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-  }
-  
-  /* Styling for the text part */
-  .text {
+    flex-wrap: wrap; /* Allow sections to wrap */
+}
+
+/* Styling for the text part */
+.text {
     flex: 1;
     padding-right: 20px;
     font-size: 1rem;
     line-height: 1.6;
     max-width: 500px; /* Control text width */
-    height: auto; /* Auto-adjust height based on content */
-    
-  }
-  
-  /* Image styling */
-  .image {
-    width: 300px; /* Set photo size */
-    height: auto;
-    border-radius: 8px;
-    margin-left: 200px;
-  }
-  
-  /* Add some spacing and adjust layout for small screens */
-  @media (max-width: 768px) {
-    .section {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .text {
-      padding-right: 0;
-      max-width: none;
-    }
-  }
+}
 
-  .about {
-    font-family: 'Times New Roman', Times, serif;     
-    font-size: 1.3rem;
-    line-height: 1.6;
-  }
-  
-  
+/* General image styling */
+.image {
+    width: 100%; /* Make image responsive, taking up available width */
+    max-width: 300px; /* Limit image size to 300px */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-left: 0; /* Remove any extra left margin */
+    margin-top: 20px; /* Add spacing above the image */
+}
+
+/* Mobile devices (Tablets and smaller screens) */
+@media (max-width: 768px) {
+    .image {
+        width: 80%; /* On tablets, reduce image width slightly */
+        max-width: 250px; /* Set max-width to 250px */
+        margin-top: 15px; /* Adjust margin for better spacing */
+    }
+}
+
+/* Very small devices (Portrait Phones) */
+@media (max-width: 480px) {
+    .image {
+        width: 90%; /* Make image take up 90% of screen width */
+        max-width: 220px; /* Further reduce max-width for very small devices */
+        margin-top: 10px; /* Slightly reduce top margin for more compact layout */
+    }
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 1200px) {
+    /* Adjust the container width and padding for medium to large screens */
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Adjust header font size and margins for medium screens */
+    .family {
+        font-size: 28pt;
+    }
+
+    /* Stack the sections vertically for medium to small screens */
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust text width and font size for medium screens */
+    .text {
+        max-width: 100%;
+        font-size: 1.1rem; 
+    }
+
+    /* Adjust image size for medium screens */
+    .image {
+        width: 100%;
+        max-width: 300px; /* Ensure image doesn’t stretch too much */
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+/* Mobile devices (tablets and smaller screens) */
+@media (max-width: 768px) {
+    .family {
+        font-size: 24pt;
+    }
+
+    .text {
+        font-size: 1.1rem; /* Slightly smaller font size for readability */
+        padding-right: 0;
+    }
+
+    .section {
+        flex-direction: column; /* Stack text and images */
+        text-align: center;
+        align-items: center; /* Center content */
+    }
+
+    .image {
+        width: 80%; /* Images take up more screen space on smaller devices */
+        max-width: 250px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+/* Very Small Devices (Portrait Phones) */
+@media (max-width: 480px) {
+    /* Further reduce the font size for very small screens */
+    .family {
+        font-size: 22pt;
+    }
+
+    .text {
+        font-size: 1rem; /* Smaller font size for better readability */
+        padding-right: 0;
+    }
+
+    /* Ensure that images fit small screen sizes */
+    .image {
+        width: 90%; /* Make images take almost full width */
+        max-width: 200px;
+        margin-top: 15px;
+    }
+}
