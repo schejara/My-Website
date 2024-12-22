@@ -24,7 +24,7 @@ function GraduationDetails() {
               </div>
               <div className="prime-photo">
                 <img 
-                  src="../documentation/images/Image1.jpg" 
+                  src="../public/Image1.jpg" 
                   alt="A portrait of the developer" 
                 />
               </div>
@@ -43,7 +43,7 @@ function GraduationDetails() {
               <div className="certification-logos">
                 <div className="istqb-logo">
                   <img 
-                    src="../documentation/images/Istqb.png" 
+                    src="../public/Istqb.png" 
                     alt="ISTQB Certification Logo" 
                   />
                 </div>

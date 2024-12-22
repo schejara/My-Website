@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="home-container">
       <div className="profile-section">
-        <img className="profile-img" src='../documentation/images/Img_3.jpg' alt="Shobha Chejara" />
+        <img className="profile-img" src='../public/Img_3.jpg' alt="Shobha Chejara" />
         <div className="about-me">
           <h1 className="name">Shobha Chejara</h1>
           
